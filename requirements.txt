@@ -10,3 +10,4 @@ unstructured
 langchain_chroma
 gunicorn
 flask
+google.auth
