@@ -8,7 +8,10 @@ from langchain import hub
 from typing import List
 from langchain_core.documents import Document
 import os
+import vertexai
 
+
+vertexai.init(project="vertex-ai-452705")
 # Set Environment Variables
 os.environ["LANGSMITH_TRACING"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = "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"  # Add your API key
