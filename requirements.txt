@@ -9,3 +9,4 @@ nest_asyncio
 unstructured
 langchain_chroma
 gunicorn
+flask
