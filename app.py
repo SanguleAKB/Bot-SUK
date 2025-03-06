@@ -33,7 +33,19 @@ loader = AsyncChromiumLoader([
     "https://www.unishivaji.ac.in/girls_Hostel/",
     "https://www.unishivaji.ac.in/about_suk/About-Kolhapur",
     "https://www.unishivaji.ac.in/Academic_Programs/LIST-OF-PROGRAMS-OFFERED-ON-CAMPUS",
-    "https://www.unishivaji.ac.in/about_suk/Organization-Structure#officers"
+    "https://www.unishivaji.ac.in/about_suk/Organization-Structure#officers",
+    "https://www.unishivaji.ac.in/dptmaths/Brief-History-of-the-department",
+    "https://www.unishivaji.ac.in/dptmaths/Learning-Outcomes"
+    "https://www.unishivaji.ac.in/dptmaths/Faculty",
+    "https://www.unishivaji.ac.in/dptmaths/Placement-Activities",
+    "https://www.unishivaji.ac.in/dptycsrd/About-us",
+    "https://www.unishivaji.ac.in/dptycsrd/Our-Programs",
+    "https://www.unishivaji.ac.in/dptycsrd/Publications",
+    "https://www.unishivaji.ac.in/dptycsrd/Faculty-Members",
+    "https://www.unishivaji.ac.in/dptmaths/Faculty",
+    "https://www.unishivaji.ac.in/dptmaths/Facilities-and-Infrastructure"
+
+
 ])
 html = loader.load()
 
@@ -70,4 +82,4 @@ def chat():
     return jsonify({"bot_response": "Please provide a valid question."})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=8080,debug=True)
